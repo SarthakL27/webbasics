@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Tags in HTML</title>
+</head>
+<body>
+    <!-- Embed specific type of resource in webpage = <audio>, <video> -->
+    <label for="">Listen to this sample tune: </label>
+    <audio id="sampleTune" src="../Resources/sampleaudio.mp3" controls loop muted autoplay></audio>
+    <!-- <source> tag can be use as a backup, because audio can be of different format.  -->
+    <audio controls>
+        <source src="../Resources/sampleaudio.wav" type="audio/wav">
+        <source src="../Resources/sampleaudio.mp4" type="audio/mp4">
+        <source src="../Resources/sampleaudio.mp3" type="audio/mp3">
+        <source src="./Resources/sampleaudio.mp3" type="audio/mp3">
+    </audio>
+    <br><hr>
+    <label for="">Watch this clip: </label>
+    <video id="sampleClip" src="../Resources/samplevideo_big_buck_bunny_720p_1mb.mp4" controls loop muted width="500"></video>
+    <video controls width="500">
+        <source src="../Resources/samplevideo_big_buck_bunny_720p_1mb.mkv" type="video/mkv">
+        <source src="../Resources/samplevideo_big_buck_bunny_720p_1mb.mp4" type="video/mp4">
+        <source src="../Resources/samplevideo_big_buck_bunny_720p_1mb.mov" type="video/mov">
+        <source src="./Resources/samplevideo_big_buck_bunny_720p_1mb.mp4" type="video/mp4">
+    </video>
+    
+    <br><hr>
+    
+    <!-- Embed any type of resource in webpage = <iframe>, <embed>, <object> -->
+    <label for="">PDF iFrame</label>
+    <iframe id="samplePDF" src="../Resources/sample-1-pdf.pdf" title="PDF in iFrame"></iframe>
+    <br>
+    <label for="">Webpage iFrame</label>
+    <iframe id="sampleSite" src="https://www.wikipedia.com/" title="Wiki in iFrame"></iframe>
+    <br>
+    <label for="">Image iFrame</label>
+    <iframe src="../Resources/dog.png" width="800"></iframe>
+    <br>
+    <label for="">Video Embed iFrame</label>
+    <iframe src="../Resources/samplevideo_big_buck_bunny_720p_1mb.mp4" allow="autoplay"></iframe>
+    <br>
+    <label for="">YouTube Embed iFrame</label>
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY" allow="autoplay"></iframe>
+    <br>
+    <label for="">Video Embed</label>
+    <embed src="../Resources/samplevideo_big_buck_bunny_720p_1mb.mp4" type="video/mp4" title="Big Buck Bunny">
+    <br>
+    <label for="">File Object</label>
+    <object type="application/pdf" data="../Resources/sample-1-pdf.pdf" width="300" height="250"></object>
+    <br>
+    <label for="">MP3 Object</label>
+    <object data="../Resources/sampleaudio.mp3" type="audio/mp3"></object>
+    
+</body>
+</html>

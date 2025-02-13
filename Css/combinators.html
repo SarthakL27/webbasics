@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <style>
+        /* Select all paragraph descendants of section = ' '*/
+        section p {
+            background-color: bisque;
+        }
+        /* Select all direct paragraph childs of section = '>'*/
+        #sect1 > p {
+            color: darkred;
+        }
+        
+        /* Select all child paragraph having class india of second section having id sect2 */
+        #sect2 p.india {
+            text-transform: lowercase;
+        }
+
+        /* Select direct paragraphs having class india of second section having id sect2 */
+        #sect2 > p.india {
+            text-transform: uppercase;
+        }
+
+        /* Select next paragraph after #sibling */
+        #sibling + p {
+            text-transform: uppercase;
+        }
+        /* Select all paragraphs after #sibling */
+        #sibling ~ p {
+            background-color: cadetblue;
+        }
+
+        /* Select next element after #sibling2 */
+        #sibling2 + * {
+            background-color: violet;
+        }
+
+        /* Select all elements after #sibling2 */
+        #sibling2 ~ p {
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h2>Combinators</h2>
+    <section id="sect1">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit obcaecati saepe aliquid laborum. Vitae, suscipit commodi in nesciunt quaerat incidunt accusantium corrupti ducimus illum possimus? Quibusdam repellat hic quia quam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae maiores ab distinctio veniam expedita quae pariatur debitis deserunt odit. Impedit nostrum error dolorum iusto voluptatum repellendus omnis asperiores illum dolore?</p>
+        <footer>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolore est consequatur commodi facere hic officia molestiae odio molestias qui quidem repudiandae quae sed eligendi iure incidunt, esse, doloribus in.</p>
+            <div id="sibling">
+                <p>Sibling Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi a, laborum nostrum omnis dignissimos sed placeat autem illo sit optio earum minima rem perferendis id distinctio, ad eaque blanditiis iusto?</p>
+            </div>
+            <p>lolololLorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt eaque quod consectetur? Natus nostrum quaerat tempora ipsam, nulla minus quas voluptatem, cumque fugiat saepe possimus voluptatibus illum. Tempore, eos nemo.</p>
+            <p>lolmao Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus animi eos veritatis, quasi, nisi id ullam perferendis aliquam ad veniam ab excepturi, deleniti impedit earum rerum a! Rem, est.</p>
+        </footer>
+    </section>
+    <section id="sect2">
+        <h3 class="india">Heading</h3>
+        <p class="india">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit obcaecati saepe aliquid laborum. Vitae, suscipit commodi in nesciunt quaerat incidunt accusantium corrupti ducimus illum possimus? Quibusdam repellat hic quia quam.</p>
+        <p class="india">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae maiores ab distinctio veniam expedita quae pariatur debitis deserunt odit. Impedit nostrum error dolorum iusto voluptatum repellendus omnis asperiores illum dolore?</p>
+        <footer>
+            <p class="india">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolore est consequatur commodi facere hic officia molestiae odio molestias qui quidem repudiandae quae sed eligendi iure incidunt, esse, doloribus in.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolore est consequatur commodi facere hic officia molestiae odio molestias qui quidem repudiandae quae sed eligendi iure incidunt, esse, doloribus in.</p>
+            <div id="sibling2">
+                <p>Sibling Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi a, laborum nostrum omnis dignissimos sed placeat autem illo sit optio earum minima rem perferendis id distinctio, ad eaque blanditiis iusto?</p>
+            </div>
+            <p>lolololLorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt eaque quod consectetur? Natus nostrum quaerat tempora ipsam, nulla minus quas voluptatem, cumque fugiat saepe possimus voluptatibus illum. Tempore, eos nemo.</p>
+            <p>lolmao Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus animi eos veritatis, quasi, nisi id ullam perferendis aliquam ad veniam ab excepturi, deleniti impedit earum rerum a! Rem, est.</p>
+        </footer>
+    </section>
+    <hr>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam vel facere aliquam cumque vitae asperiores, officiis error natus ab eveniet hic sint enim soluta, a molestiae facilis quasi corrupti consequatur.</p>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Pseudo Classes for CSS</title>
+    <style>
+        /* Always use external CSS */
+        .topNavBar li {
+            display: inline-block;
+            padding: 15px;
+        }
+        .topNavBar {
+            background-color: black;
+            text-align: center;
+        }
+        .topNavBar a {
+            color: white;
+            text-decoration: none;
+        }
+        /* Not Visited Links */
+        .topNavBar a:link {
+            color: cyan;
+        }
+        /* Visited Links */
+        .topNavBar a:visited {
+            color: tomato;
+        }
+        /* Current Active Link */
+        .topNavBar a:active {
+            background-color: hotpink;
+        }
+        /* Style to link on hover */
+        .topNavBar a:hover {
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="topNavBar">
+            <ul>
+                <li><a href="https://www.neosofttech.com/">NeoSOFT</a></li>
+                <li><a href="https://www.deloitte.com/global/en.html">Deloitte</a></li>
+                <li><a href="https://www.tcs.com/">TCS</a></li>
+                <li><a href="https://about.google/">Google Inc.</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

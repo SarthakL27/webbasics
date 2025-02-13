@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block{
+            height: 100px;
+            width: 100px;
+            border: 4px double green;
+            background: linear-gradient(pink,yellow,purple);
+            transition: 1s;
+
+        }
+
+        #block1:hover{ /*changes our block position on x-axis when hover*/
+            transform: translateX(500px);
+            transform: translateY(300px);
+            transform: translate(200px,300px);
+             transform : translate(200px,300px);
+             transform : translate(400px,100px);
+             transform : translate(400px)
+
+        }
+
+        #block2:hover{
+            transform: rotate(90deg);
+            transform: rotate(6.28rad); /*radian angle*/
+            transform: rotateX(80deg);
+            transform: rotateY(80deg); /*like closing door */
+        }
+
+        #block3:hover{
+            transform: scale(3);  /*number * orignal dimension */
+            transform: scale(2,4);
+           transform: scalex(2);
+           transform: scaleY(2);
+
+
+        }
+
+        #scaledemo{
+            transition: 0.5s;
+        }
+        figure{
+            border:10px solid;
+            overflow: hidden;
+            display: inline-block;
+        }
+        #scaledemo:hover{
+            transform: scale(2);
+        }
+
+        #block4:hover{
+            transform: skew(45deg,35deg); /*neither parallel nor intersecting */
+            transform: skewx(45deg);
+            transform: skewy(45deg);
+        }
+
+        #block5:hover{
+            transform: matrix(2,0.5,1,2,500,0); /*skew angle : rad */
+        }
+    </style>
+</head>
+<body>
+    <section class="block" id="block1"></section>
+
+    <section class="block" id="block2">India is my country</section>
+
+    <section class="block" id="block3">India is my country</section>
+
+    <section class="block" id="block4">India is my country</section>
+
+    <section class="block" id="block5">India is my country</section>
+
+
+    <figure>
+        <img id="scaledemo" src="../Resources/dog.png" alt="dog pic" height="100" width="100">
+    </figure>
+</body>
+</html>

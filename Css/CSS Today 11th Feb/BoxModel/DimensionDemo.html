@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimension</title>
+    <style>
+        /*block elements : width : implict 100% of their parent*/
+        body{
+            border: 3px solid red;
+        }
+        article
+        {
+            border: 3px solid green;
+        }
+        header{
+            border: 3px solid pink;
+            width: 10in; /*explicit width*/ /*px, cm, in, m*/
+            height: 500px; /*fix height*/
+        }
+        h1, p{
+            border: 2px solid blue;
+            word-wrap: break-word; /*when no space*/
+        
+        }
+        p{
+            height: 50%; /*when we have explicit height to parent then only % will work*/
+        }
+        b{ /*no height and width to inline elements */
+            border: 1px solid darkcyan;
+            height: 200px;
+            width: 100px;
+        }
+        h1{
+            width: 50%; /* n% of parent*/
+            height: 3cm;
+        }
+       
+    </style>
+</head>
+<body>
+    <article>
+        <header>
+            <h1>DIMENSION DEMO</h1>
+            <p>
+                Lorem ipsum dolor sit amet, <b>consectetur adipisicing elit</b>. Quidem, minus! Iste dolorum optio consectetur magni alias officia eligendi vel facilis, voluptatibus 
+                ducimus aperiam velit! Odit quod accusantium maxime deserunt explicabo!
+                Lorem ipsum dolor sit amet, <b>consectetur adipisicing elit</b>. Quidem, minus! Iste dolorum optio consectetur magni alias officia eligendi vel facilis, voluptatibus 
+                ducimus aperiam velit! Odit quod accusantium maxime deserunt explicabo!
+            </p>
+        </header>
+    </article>
+</body>
+</html>

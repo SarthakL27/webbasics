@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Tag in HTML</title>
+    <style>
+        #catImg {
+            height: 300px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Img Tag -->
+    <h3>Dogs of Mumbai</h3>
+    <img src="https://www.mumbailive.com/images/news/Dogs_1507637117174.jpg" height="280" width="500" alt="Image of the Street Dogs in Mumbai">
+    <hr>
+    <h3>Cats of Mumbai</h3>
+    <img id="catImg" src="../Resources/cats-of-mumbai.jpg" alt="Image of the Cats in Mumbai">
+
+    <br><hr>
+
+    <!-- Clickable Images -->
+    <h3>Click the picture to open my portfolio website</h3>
+    <a href="https://om-auti.vercel.app/"><img src="../Resources/om-favicon.png" alt="My Portfolio" width="100"></a>
+
+    <!-- Embedding resources in iFrame on click -->
+    <h3>iFrame on click</h3>
+    <a href="https://i.imgflip.com/2ef9zb.jpg" target="resourceframe">Click me for a surprise</a>
+    <iframe name="resourceframe"></iframe>
+
+    <hr>
+
+    <!-- Figure and Figcaption -->
+    <article>
+        <h3>Cat and Dog together in Mumbai</h3>
+        <figure>
+            <img src="https://d3e1m60ptf1oym.cloudfront.net/01ebcdaf-c4f6-4a3b-ac7b-6979410a4942/Brett-Cole-India-02531_xgaplus.jpg" alt="Dog and Cat in Mumbai" width="500">
+            <figcaption>Cute pardners</figcaption>
+            <p>Photography by Brett Cole. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident at est nostrum eveniet magnam, nam velit autem aspernatur aliquam dolorem nesciunt quia corrupti tenetur iusto delectus dignissimos dolores cumque incidunt.</p>
+        </figure>
+    </article>
+
+</body>
+</html>

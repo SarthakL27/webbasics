@@ -1,0 +1,18 @@
+h1 {
+    color: red;
+}
+h2, h3 {
+    background-color: blue;
+}
+
+p {
+    text-align: left;
+}
+/* Class has high precedence in internal & external CSS */
+.johnCena {
+    text-align: right;
+}
+/* ID has highest precedence in internal & external CSS */
+#johnny {
+    text-align: center;
+}

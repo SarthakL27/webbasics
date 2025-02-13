@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Timetable</title>
+    <style>
+        .tt, .tt td, .tt th {
+            border: 1px solid;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: center;
+        }
+        .weekdays {
+            background-color: yellow;
+        }
+        .dp {
+            background-color: aqua;
+        }
+        .times {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <table class="tt">
+        <caption>School Time-Table</caption>
+        <tbody>
+            <tr>
+                <th rowspan="3" class="dp">Days</th>
+                <th colspan="8" class="dp">Periods</th>
+            </tr>
+            <tr>
+                <th rowspan="2" class="times">1st (Time)</th>
+                <th rowspan="2" class="times">2nd (Time)</th>
+                <th rowspan="2" class="times">3rd (Time)</th>
+                <th rowspan="2" class="times">4th (Time)</th>
+                <th rowspan="8" class="break">Break</th>
+                <th rowspan="2" class="times">5th (Time)</th>
+                <th rowspan="2" class="times">6th (Time)</th>
+                <th rowspan="2" class="times">7th (Time)</th>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th class="weekdays">Monday</th>
+                <td>Subject 1</td>
+                <td>Subject 2</td>
+                <td>Subject 3</td>
+                <td>Subject 4</td>
+                <td>Subject 5</td>
+                <td>Subject 6</td>
+                <td>Subject 7</td>
+            </tr>
+            <tr>
+                <th class="weekdays">Tuesday</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <th class="weekdays">Wednesday</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <th class="weekdays">Thursday</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <th class="weekdays">Friday</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td colspan="3">Free</td>
+            </tr>
+            <tr>
+                <th class="weekdays">Saturday</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+</body>
+</html>

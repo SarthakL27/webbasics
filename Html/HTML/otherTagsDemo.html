@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Miscellanous Tags in HTML</title>
+</head>
+<body>
+    <!-- <details> & <summary> tags -->
+    <details>
+        <summary>HTML</summary>
+        <div>
+            <p>This includes summary tag.</p>
+            <p>HTML, or Hypertext Markup Language, is a markup language for the web that defines the structure of web pages.</p>
+        </div>
+    </details>
+    <details>
+        <div>
+            <p>This does not include summary tag.</p>
+            <p>HTML, or Hypertext Markup Language, is a markup language for the web that defines the structure of web pages.</p>
+        </div>
+    </details>
+
+    <br><hr><hr><br>
+
+    <!-- Internal Script -->
+    <form action="">
+        <input id="myName" type="text" name="myName" placeholder="Please enter your name" oninput="upper()">
+    </form>
+    <p>
+        <span>My name is <b id="upper"> </b></span>
+    </p>
+
+    <script>
+        const inpp = document.getElementById("myName");
+        const outt = document.getElementById("upper");
+        function upper() {
+            outt.textContent = inpp.value.toUpperCase();
+        }
+    </script>
+
+    <hr>
+
+    <!-- Inline Script -->
+    <form action="">
+        <input id="myNameAgain" type="text" name="myNameAgain" placeholder="Please enter your name" oninput="upper1.textContent = myNameAgain.value.toUpperCase()">
+    </form>
+    <p>
+        <span>My name is <b id="upper1"> </b></span>
+    </p>
+
+    <hr>
+
+    <!-- <output> Tag -->
+    <form action="">
+        <input id="myNameAgainn" type="text" name="myNameAgainn" placeholder="Please enter your name" oninput="upper2.value = myNameAgainn.value.toUpperCase()">
+    </form>
+    <p>
+        <span>My name is <b><output id="upper2"></output></b></span>
+    </p>
+
+    <br><hr><hr><br>
+
+    <!-- <progress> & <meter> tag -->
+    <label for="">Progressbar: </label>
+    <progress value="0.9"></progress>
+    <br><hr>
+    <label for="">Fuel Tank: </label>
+    <span>0<meter id="fuelIndicator" value="50" min="0" max="100" low="22" high="88" style="width: 200px; height: 50px;"></meter>100</span>
+    <br>
+    <!-- Here, safer = high to max, warning = low to high, danger = min to low -->
+    <span>0<meter id="fuelIndicator2" value="50" min="0" max="100" low="22" high="88" optimum="92" style="width: 200px; height: 50px;"></meter>100</span>
+    <br>
+    <!-- Here, safer = min to low, warning = low to high, danger = high to max -->
+    <label for="">Storage: </label>
+    <span>923GB free<meter id="diskUsage" value="10" min="0" max="100" low="22" high="88" optimum="14" style="width: 200px; height: 50px;"></meter>out of 1TB</span>
+
+    <button>START RACE</button> <button>FILL FUEL</button>
+
+    <br><hr><hr><br>
+
+    <!-- <canvas> Tag -->
+    <canvas id="drawCanvas" style="border: 3px solid;" height="300" width="700">hello</canvas>
+
+    <script>
+        const cn1 = document.getElementById("drawCanvas");
+        const context1 = cn1.getContext('2d');
+        context1.beginPath();
+        context1.rect(20, 20, 100, 100);
+        context1.stroke();
+        context1.fillRect(200,20,100,100);
+        context1.fillStyle = "blue";
+        context1.fillRect(20,150,100,100);
+        
+        context1.beginPath();
+        context1.moveTo(500, 100);
+        context1.lineTo(400, 200);
+        context1.strokeStyle = "red";
+        context1.stroke();
+        context1.moveTo(600, 100);
+        context1.lineTo(600, 200);
+        context1.stroke();
+
+        context1.beginPath();
+        context1.font = "30px Monospace"; /* "font-size font-family" */
+        context1.fillStyle = "aqua";
+        context1.fillText("omie:D", 590, 290);
+    </script>
+</body>
+</html>

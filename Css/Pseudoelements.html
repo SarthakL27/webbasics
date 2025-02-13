@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-line{
+            color: red;
+        }
+        pre::first-line{
+            color: blue;
+        } 
+
+        #firstletter,pre::first-letter{
+               font-style: italic;
+               font-size: 30px;
+               font-weight: bold;
+        }
+
+        #newsarticle{
+            columns: 3;
+        }
+
+        #newsarticle::first-letter{
+            font-style: italic;
+            font-size: 30px;
+            font-weight: bold;
+            color: darkgoldenrod;
+        }
+
+       body>*:not(p){
+            background-color: pink;
+        }
+       body>*:not(p){
+        color: aquamarine;
+       }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+         Vero odio beatae reprehenderit distinctio quibusdam incidunt? Id sit dolore doloremque aliquam
+         debitis officia saepe harum, nulla tempora? Odit ipsam minus magnam?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Voluptatem quibusdam architecto dolorum explicabo ducimus aliquid beatae rerum
+         rem repellat enim quia,<span> et ea suscipit perferendis assumenda dolorem accusantium.</span>
+          Optio, blanditiis.</p>
+
+    <p><span>I</span>ndia is my country <br>All Indians are my brothers and sisters</p>
+
+    <pre><span id="firstletter">I</span>ndia is my Country
+    All Indians are my brothers and sisters
+    and my name is Sarthak
+</pre>
+
+<p id="newsarticle">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Veritatis libero deleniti non sunt aperiam sed
+     tenetur voluptate perferendis architecto 
+     distinctio ipsa enim, facilis id reprehenderit modi mollitia possimus alias illum.
+
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+     Veritatis libero deleniti non sunt aperiam sed
+      tenetur voluptate perferendis architecto 
+      distinctio ipsa enim, facilis id reprehenderit modi mollitia possimus alias illum.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      Veritatis libero deleniti non sunt aperiam sed
+       tenetur voluptate perferendis architecto 
+       distinctio ipsa enim, facilis id reprehenderit modi mollitia possimus alias illum.
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+       Veritatis libero deleniti non sunt aperiam sed
+        tenetur voluptate perferendis architecto 
+        distinctio ipsa enim, facilis id reprehenderit modi mollitia possimus alias illum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Veritatis libero deleniti non sunt aperiam sed
+         tenetur voluptate perferendis architecto 
+         distinctio ipsa enim, facilis id reprehenderit modi mollitia possimus alias illum.
+         Veritatis libero deleniti non sunt aperiam sed
+         tenetur voluptate perferendis architecto 
+         distinctio ipsa enim, facilis id reprehenderit modi mollitia possimus alias illum.
+
+         
+         
+
+         
+
+         
+
+         
+         
+
+</p>
+</body>
+</html>

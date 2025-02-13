@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes for CSS</title>
+    <style>
+        table, td, th {
+            border: 1px solid;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        /* On hover,   */
+        /* Pseudo Class :hover */
+        table:hover {
+            background-color: yellow;
+        }
+        /* Select first <tr> of below tables */
+        tr:first-child {
+            color: aquamarine;
+        }
+        /* Select first <tr> of <thead> */
+        thead > tr:first-child {
+            color: tomato;
+        }
+        /* Select last <tr> of <thead> */
+        tbody > tr:last-child {
+            color: red;
+        }
+        /* Select second <td> of third <tr> in <tbody> */
+        tbody > tr:nth-child(3) > td:nth-child(2) {
+            background-color: darkcyan;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>NeoSOFT Top 4 Employees</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">EMP ID</th>
+                <th rowspan="2">Name</th>
+                <th rowspan="2">Marks</th>
+                <th rowspan="2">Grade</th>
+                <th colspan="2">Contact</th>
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <th>E-mail</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>13552</th>
+                <td>Kapil</td>
+                <td>95</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <th>13557</th>
+                <td>Sarthak</td>
+                <td>94</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <th>13558</th>
+                <td>Om</td>
+                <td>96</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <th>13569</th>
+                <td>Atharva</td>
+                <td>95</td>
+                <td>A+</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <table>
+        <caption>NeoSOFT Top 4 Employees</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">EMP ID</th>
+                <th rowspan="2">Name</th>
+                <th rowspan="2">Marks</th>
+                <th rowspan="2">Grade</th>
+                <th colspan="2">Contact</th>
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <th>E-mail</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>13552</th>
+                <td>Kapil</td>
+                <td>95</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <th>13557</th>
+                <td>Sarthak</td>
+                <td>94</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <th>13558</th>
+                <td>Om</td>
+                <td>96</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <th>13569</th>
+                <td>Atharva</td>
+                <td>95</td>
+                <td>A+</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

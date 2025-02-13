@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in HTML</title>
+    <style>
+        .empTable, .empTable td, .empTable th {
+            border: 1px solid;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        .empTable tbody {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <!-- Table Skeleton -->
+    <table>
+        <thead>
+
+        </thead>
+        <tbody>
+
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+
+    <!-- Table Example without partition tags -->
+    <table class="empTable">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+        <tr>
+            <td>13552</td>
+            <td>Kapil</td>
+        </tr>
+        <tr>
+            <td>13557</td>
+            <td>Sarthak</td>
+        </tr>
+        <tr>
+            <td>13558</td>
+            <td>Om</td>
+        </tr>
+        <tr>
+            <td>13569</td>
+            <td>Atharva</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- Table Example with partition tags -->
+    <table class="empTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>13552</td>
+                <td>Kapil</td>
+            </tr>
+            <tr>
+                <td>13557</td>
+                <td>Sarthak</td>
+            </tr>
+            <tr>
+                <td>13558</td>
+                <td>Om</td>
+            </tr>
+            <tr>
+                <td>13569</td>
+                <td>Atharva</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <br>
+
+    <!-- A good Table Example (with rowspan/colspan) -->
+    <table class="empTable">
+        <caption>NeoSOFT Top 4 Employees</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">EMP ID</th>
+                <th rowspan="2">Name</th>
+                <th rowspan="2">Marks</th>
+                <th rowspan="2">Grade</th>
+                <th colspan="2">Contact</th>
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <th>E-mail</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>13552</th>
+                <td>Kapil</td>
+                <td>95</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <th>13557</th>
+                <td>Sarthak</td>
+                <td>94</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <th>13558</th>
+                <td>Om</td>
+                <td>96</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <th>13569</th>
+                <td>Atharva</td>
+                <td>95</td>
+                <td>A+</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <td>4 Employees</td>
+                <td>380</td>
+                <td>A+</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

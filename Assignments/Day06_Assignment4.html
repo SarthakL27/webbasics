@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Border</title>
+    <style>
+        .gradient-border {
+            display: inline-block;
+            padding: 5px; 
+            background: linear-gradient(45deg, #ff6b6b, #f1c40f, #2ecc71);
+            border-radius: 10px; 
+        }
+
+        .gradient-border-inner {
+            display: block;
+            padding: 20px; /* Adjusingt padding for content spacing */
+            background: white; /* Background color of the inner content */
+            border-radius: 8px; /* Inner content border-radius should be slightly less than the outer one */
+            background-clip: padding-box; /* Ensures the inner background does not overlap the gradient */
+        }
+    </style>
+</head>
+<body>
+    <div class="gradient-border">
+        <div class="gradient-border-inner">
+            <h1>Hello World!</h1>
+            <p>This is an example of a gradient border.</p>
+        </div>
+    </div>
+</body>
+</html>

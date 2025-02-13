@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Tag in HTML</title>
+</head>
+<body>
+    <div>
+        
+        <!-- Default input type is text -->
+        <input>
+        <br>
+        <input type="text" value="You are amazing!" readonly>
+        <br><br><hr>
+        <form action="">
+            <!-- Input type = "text" -->
+            <label>Please enter your full name</label><br>
+            <label>First name: </label>
+            <input type="text" class="yourName" minlength="2" name="firstName" required>
+            <input type="text" class="yourName" placeholder="Middle name">
+            <input type="text" class="yourName" title="Last name" required>
+            <br>
+            <!-- Input type = "number" -->
+            <label for="">Age: </label>
+            <input type="number" class="yourAge" name="age" min="18" max="60">
+            <br>
+            <!-- Input type = "tel" -->
+            <label for="">Mobile Number: </label>
+            <input type="tel" class="yourPhone" name="phoneNumber" minlength="10" maxlength="10" pattern="[0-9]*" title="Please give correct phone number">
+            <br>
+            <!-- Input type = "email" -->
+            <label for="">E-mail: </label>
+            <input type="email" class="yourEmail" name="emailID" pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$" required>
+            <br>
+            <!-- Input type = "checkbox" -->
+            <label for="">Select Courses to enroll: </label>
+            <input type="checkbox" class="yourCourses" id="cb1" name="courses2enroll" value="Web Basics" required checked><label for="cb1">Web Basics</label>
+            <input type="checkbox" class="yourCourses" id="cb2" name="courses2enroll" value="MERN Stack"><label for="cb2">MERN Stack</label>
+            <input type="checkbox" class="yourCourses" id="cb3" name="courses2enroll" value="ASP.NET"><label for="cb3">ASP.NET</label>
+            <input type="checkbox" class="yourCourses" id="cb4" name="courses2enroll" value="DevOps"><label for="cb4">DevOps</label>
+            <br>
+            <!-- Input type = "radio" -->
+            <label for="">Gender: </label>
+            <input type="radio" id="genderM" name="gender" value="Male"><label for="gender1">Male</label>
+            <input type="radio" id="genderF" name="gender" value="Female"><label for="gender2">Female</label>
+            <input type="radio" id="genderO" name="gender" value="Other"><label for="gender3">Other</label>
+            <br>
+            <!-- Input type = "password" -->
+            <label for="">Set Password (Minimum length of 8): </label>
+            <input type="password" name="password" id="yourPassword" class="pswd" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,10}$" title="Please enter strong password" required>
+            <br>
+            <label for="">Confirm Password: </label>
+            <input type="password" name="password" id="yourFinalPassword" class="pswd" title="Please enter correct password" required>
+            <br>
+            <!-- Input type = "url" -->
+            <label for="">GitHub Profile Link: </label>
+            <input type="url" name="githubProfile" id="github">
+            <br>
+            <!-- Input type = "datetime-local" -->
+            <label for="">Date and Time for Course Interview: </label>
+            <input type="datetime-local" name="dateTimeSelect" id="dtLocal">
+            <br>
+            <!-- Input type = "month" -->
+            <label for="">Select month to start your course: </label>
+            <input type="month" name="courseMonth" id="monthSelect">
+            <br>
+            <!-- Input type = "week" -->
+            <label for="">On which week: </label>
+            <input type="week" name="courseWeek" id="weekSelect">
+            <br>
+            <!-- Input type = "color" -->
+            <label for="">Choose a random color: </label>
+            <input type="color" name="colorChoose" id="colorSelect">
+            <br>
+            <!-- Input type = "file" -->
+            <label for="">Upload your resume: </label>
+            <input type="file" name="uploadResume" id="fileUpload">
+            <br>
+            <!-- Input type = "range" -->
+            <label for="">Rate your technical skills: </label>
+            <input type="range" name="skillsRating" id="rangeSkills" title="Out of 10">
+            <br>
+            <!-- <select> & <option> Tags-->
+            <label for="">Mother Tongue: </label>
+            <select name="motherTongue" id="mt">
+                <option value="0" selected>Select Language</option>
+                <option value="Marathi">Marathi</option>
+                <option value="Hindi">Hindi</option>
+                <option value="English">English</option>
+                <option value="Tamil">Tamil</option>
+                <option value="Telugu">Telugu</option>
+                <option value="Other">Other</option>
+            </select>
+            <br>
+            <!-- <textarea> -->
+            <label for="">Add description/comment (if any): </label>
+            <textarea name="commentArea" id="descArea" cols="50px" rows="10px"></textarea>
+            <br>
+            <!-- <datalist> in Input type = "text" -->
+            <label for="">Select your preferred location to attend the course: </label>
+            <datalist id="courseLocations">
+                <option value="Dadar">DADAR</option>
+                <option value="Parel">PAREL</option>
+                <option value="Rabale">RABALE</option>
+                <option value="Bangalore">BANGALORE</option>
+            </datalist>
+            <input type="text" name="placeSelection" id="selectPlace" list="courseLocations">
+            <br>
+            <!-- Input type = "submit", "reset", "hidden" -->
+            <input type="submit" id="submitBtn" value="Enroll">
+            <input type="reset" id="resetBtn">
+            <input type="hidden" name="hidden" value="I am John Cena!">
+            <!-- Alternate ways to get images as submit button -->
+            <button type="submit" id="submitBtnImg1" title="Enroll!"><img src="http://www.quickmeme.com/img/c4/c46feaba573fa4f1adb6299518c866b11233b61b1bbc8aaa4d03c43429606b21.jpg" alt="Submit" width="100"></button>
+            <input type="image" id="submitBtnImg2" title="Enroll!" src="http://www.quickmeme.com/img/c4/c46feaba573fa4f1adb6299518c866b11233b61b1bbc8aaa4d03c43429606b21.jpg" width="100" alt="Submit">
+        </form>
+
+    </div>
+</body>
+</html>

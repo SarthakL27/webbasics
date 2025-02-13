@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Styling in HTML using CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+        article, h1 {
+            border: 3px double tomato;
+        }
+        h1 {
+            text-transform: uppercase; /* Transforms text into uppercase, lowercase, or capitalize */
+            color: chocolate;
+            font-style: italic;
+            font-weight: lighter;
+            text-align: center; /* To align text inside specified element */
+            text-decoration-line: underline;
+            text-decoration-style: dashed;
+            text-decoration-color: blue;
+            text-decoration-thickness: 10px;
+            /* text-decoration: underline wavy; */
+            width: 50%;
+        }
+        article {
+            justify-items: center; /* Every items/children/elements inside article are aligned to center */
+        }
+
+        h2 {
+            font-family: monospace;
+            text-shadow: 10px 10px;
+            text-shadow: 0px -5px; /* x-coordinate y-coordinate */
+            text-shadow: 0px -5px 3px; /* Here, 3px is for Shadow blurness */
+            text-shadow: 0px -5px 3px hotpink; /* Different shadow color */
+            color: red;
+        }
+
+
+        .omFont {
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>NeoSOFT</h1>
+        <h2>I AM RED.</h2>
+        <h3 class="omFont">Nothing Phone 3 Series is arriving this month.</h3>
+    </article>
+</body>
+</html>
