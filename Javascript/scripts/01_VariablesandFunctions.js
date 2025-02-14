@@ -140,3 +140,29 @@ const names=['Amol','kiran','aman','savita','Amant'];
 
 const capitalA=names.filter(name=>name.startsWith("A"));
 console.log(capitalA);
+
+const nameA =names.find(name => name.toUpperCase().startsWith("A"));
+console.log(nameA);
+
+
+//prefix Neo- to every name of array : map 
+const newnames=names.map((name)=>'Neo-'+name);
+console.log(newnames);
+
+//chaining of map and foreach
+names.map((name)=>'Pro-'+name).forEach(uppercasedName => console.log(uppercasedName));
+
+arr=[67,89,56,45,89,45];
+//double each no of an array and store it into new array
+arr.map((val)=>val*2).forEach((mappedvalue)=>console.log(mappedvalue));
+
+//add all numbers of array :reduce() method
+const summ=arr.reduce((accumulator,value)=>accumulator+value);
+//accumulator:67 //value:89 , 67+89=156
+//accumulator = 156 , value 56 ,156+56 =212
+//accumulator =212,value=45 212+55
+
+console.log(summ);
+
+names.map
+
