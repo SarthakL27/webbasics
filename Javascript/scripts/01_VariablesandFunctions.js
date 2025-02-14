@@ -163,6 +163,24 @@ const summ=arr.reduce((accumulator,value)=>accumulator+value);
 //accumulator =212,value=45 212+55
 
 console.log(summ);
+let arr1=[5,4,51,3];
+let arr2=[6,2,1,4];
 
-names.map
+const sum1=arr1.reduce((acc, val)=>acc+val);
+const sum2=arr2.reduce((acc,val)=>acc+val,sum1)
+console.log("Addition of arr1 and arr2: "+sum2);
 
+
+const namess=['Amol','kiran','aman','savita','Amant'];
+//concat first letter of every name from array
+
+const concatString=namess.map((name)=>name.charAt(0).toUpperCase()).reduce((acc,letter)=>acc+letter);
+console.log(concatString);
+
+namesss=['Kiran','amol', 'Kavita','aman','Savita','Amant', 'Zinat', 'Zahar'];
+/* contact first letter of every name from array */
+
+// const concatstring=namesss.map((name)=>name.charAt(0).toUpperCase()).reduce((acc,letter)=> acc+letter);
+// console.log(concatstring);
+
+namesss.filter((name)=>name.toUpperCase().startsWith('A') || name.toUpperCase().startsWith('Z')).forEach((name)=>console.log(name))
