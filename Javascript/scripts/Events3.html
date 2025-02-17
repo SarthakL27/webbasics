@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <b id="rangeop"></b>
+    <span id="minrange"></span>
+    <input title="agerange" type="range" name="" id="agerange" min="18" max="50" value="22" onchange="test()">
+    <script>
+        const rangeele=document.getElementById('agerange');
+        const bele=document.getElementById('rangeop');
+        const spanele1=document.getElementById('minrange')
+
+        function test(){
+            console.log("function called...");
+            console.log(rangeele.value);
+            bele.textContent=rangeele.value;
+
+            
+        }
+        function getValue(){
+            bele.textContent=rangeele.value;
+        }
+    </script>  
+</body>
+</html>
