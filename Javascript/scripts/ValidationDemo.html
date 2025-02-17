@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <style>
+        .errorMessage{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h4>User Registration</h4>
+   
+    <form novalidate>
+        <div>
+            <label for="username">Set Username:</label>
+            <input type="text"  id="username" onblur="validateUsername()" required>
+        </div>
+        <div class="errorMessage">
+            <small id="usererror"></small>
+        </div>
+        <br>
+        <div>
+            <label for="password">Set Password:</label>
+            <input type="text"  id="password" onblur="validatePassword()" required>
+        </div>
+        <div class="errorMessage">
+            <small id="passerror"></small>
+        </div>
+        <br>
+        <div>
+            <label for="confpassword">Confirm Password:</label>
+            <input type="text"  id="confpassword"  onblur="validateConfirmPassword()"  required>
+        </div>
+        <div class="errorMessage">
+            <small id="cpasserror"></small>
+        </div>
+        <input type="submit" value="REGISTER">
+    </form>
+
+    <script>
+        const usernameEle=document.getElementById("username");
+        const passEle=document.getElementById("password");
+        const cpassEle=document.getElementById("confpassword");
+        const userErrorEle=document.getElementById('usererror');
+        const passErrorEle=document.getElementById('passerror');
+        const cpassErrorEle=document.getElementById('cpasserror');
+        function validateUsername(){
+            const username=usernameEle.value;
+            if(username=="")
+                userErrorEle.textContent="username is required";
+            else
+            userErrorEle.textContent="";
+            usernameEle.style.border='2px solid green';
+
+        }
+        function validatePassword(){
+            const password=passEle.value;
+            if(password=="")
+                passErrorEle.textContent="password is required";
+                else
+                passErrorEle.textContent="";
+                passErrorEle.style.border='2px solid green';
+        }
+        function validateConfirmPassword(){
+            const confirmpassword=cpassEle.value;
+            if(confirmpassword=="")
+                cpassErrorEle.textContent="password confirmation is required";
+                else
+                cpassErrorEle.textContent="";
+                cpassErrorEle.style.border='2px solid green';
+        }
+    </script>
+</body>
+</html>
