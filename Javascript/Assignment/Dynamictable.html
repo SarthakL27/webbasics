@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h2>Dynamic Table Example</h2>
+    
+    <button onclick="addRow()">Add Row</button>
+    <table id="dynamicTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table rows will be added here dynamically -->
+        </tbody>
+    </table>
+
+    <script>
+        // Function to add a new row to the table
+        function addRow() {
+            const table = document.getElementById("dynamicTable").getElementsByTagName('tbody')[0];
+            const newRow = table.insertRow();
+
+            // Add name cell
+            const nameCell = newRow.insertCell(0);
+            const nameInput = document.createElement("input");
+            nameInput.type = "text";
+            nameCell.appendChild(nameInput);
+
+            // Add age cell
+            const ageCell = newRow.insertCell(1);
+            const ageInput = document.createElement("input");
+            ageInput.type = "number";
+            ageCell.appendChild(ageInput);
+
+            // Add action cell with delete button
+            const actionCell = newRow.insertCell(2);
+            const deleteButton = document.createElement("button");
+            deleteButton.textContent = "Delete";
+            deleteButton.onclick = function() {
+                table.deleteRow(newRow.rowIndex - 1);
+            };
+            actionCell.appendChild(deleteButton);
+        }
+    </script>
+</body>
+</html>

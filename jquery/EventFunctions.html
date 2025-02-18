@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"  placeholder="enter your name">
+    <input type="text"  placeholder="enter your lastname">
+    <b id="nameele"></b>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $('[type=text]').focus(function(){
+            $(this).css("border",'4px solid blue')
+        });
+        $('[type="text"]').keyup(function(){
+            let name=$(this).val();
+            $("#nameele").text(name);   
+        });
+
+        console.log($('[type="text"]').css("border-radius",'30px')); //multiple
+        console.log($('[type="text"]').val()); //first value
+        //val() : u must have individual selection otherwise external looping needed
+        //in above case external looping is needed
+
+        $('[type="text"]').each((index,ele)=>{
+            console.log(index);
+            console.log(ele); //JS DOM element
+            console.log(ele.value); //JS logic
+            
+        })
+        
+        
+    </script>
+</body>
+</html>
